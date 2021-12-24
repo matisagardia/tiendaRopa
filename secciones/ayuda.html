@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="../scss/style.css">
     <title>NOCHANCE - Ayuda</title>
 </head>
-<body class="bodyAyuda">
+<body class="bodyProyecto">
     <header class="headerIniciosesion">
         <a href="../index.html">NOCHANCE</a>
     </header>
@@ -26,68 +26,101 @@
                     <li><a href="./ayuda.html"> Ayuda</a></li>
                 </ul>
         <!--Menu central con tipo de producto-->
-                <ul class="menuCentral">
-                    <li><a href="./remeras.html">Remeras</a>
-                        <ul>
-                            <li><a href="">Clasicas</a></li>
-                            <li><a href="">Over-Size</a></li>
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent ">
+            <div class="container">
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href=# id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Remeras
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <li><a class="dropdown-item" href="./remeras.html">Clásicas</a></li>
+                          <li><a class="dropdown-item" href="./remeras.html">Over-Size</a></li>
                         </ul>
-                    </li>    
-                    <li><a href="./buzos.html">Buzos</a></li>
-                    <li><a href="./camperas.html">Camperas</a></li>
-                    <li><a href="./pantalones.html">Pantalones</a>
-                        <ul>
-                            <li><a href="">Joggings</a></li>
-                            <li><a href="">Jeans</a></li>
-                            <li><a href="">Shorts</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="./accesorios.html">Accesorios</a>
-                        <ul>
-                            <li><a href="">Aros</a></li>
-                            <li><a href="">Cadenas</a></li>
-                            <li><a href="">Pulseras</a></li>
-                        </ul>
-                    </li>
+                      </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./buzos.html">Buzos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./camperas.html">Camperas</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href=# id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Pantalones
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="./pantalones.html">Jeans</a></li>
+                      <li><a class="dropdown-item" href="./pantalones.html">Joggings</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./accesorios.html">Accesorios</a>
+                  </li>
                 </ul>
+              </div>
+            </div>
+          </nav>
     </nav>   
-    <!--Aca ademas del formulario de contacto iria una lista de FAQS-->
-    <form>
-            <div>
-                <label for="nombre">Nombre</label>
-                <input type="text" name="nombre" id="nombre">
-            </div>    
-            <div>   
-                <label for="apellido">Apellido</label>
-                <input type="text" name="apellido" id="apellido">
-            </div>      
-            <div>      
-                <label for="telefono">Numero de Telefono</label>
-                    <input type="text" name="telefono" id="telefono">
-                    <label for="acepta">¿Desea que lo contactemos por este medio?</label>
-                    <input type="checkbox" name="acepta" value=1>
+    <!--Formulario de contacto-->
+
+    <form id="formularioContacto">
+        <div class="row justify-content-center">
+            <div class="col-6">
+                    <label for="exampleFormControlInput1">Ingrese su Email:</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email@ejemplo.com">
             </div>
-            <div>      
-            <label for="mail">Correo Electronico</label>
-                    <input type="email" name="mail" id="mail"><br><br>
-             </div>    
-             <div>
-                <label for="Motivo de consulta">Seleccione su motivo de consulta</label><br>
-                    <select name="Motivo de consulta">
-                        <option value="Consulta compra realizada">Consulta sobre compra realizada</option>
-                        <option value="Duda producto">Duda sobre un producto</option>
-                        <option value="Envios">Envios</option>
-                    </select>        
-            </div>   
-             <div>
-                <label for="Consultas">Consultas/Aclaraciones</label><br>
-                <textarea name="Consultas/Aclaraciones" id="Consultas" cols="30" rows="10"></textarea>
-            </div>                   
-            <div>
-             <input type="submit" value="Enviar consulta">
-             <input type="reset" value= "Limpiar">
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-6">
+            <label for="exampleFormControlInput1">Ingrese su nombre:</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
+          </div>
+        </div>
+          <div class="row justify-content-center">
+            <div class="col-6">
+            <label for="exampleFormControlInput1">Ingrese su apellido:</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Apellido">
+          </div>
+        </div>
+          <div class="row justify-content-center">
+            <div class="col-6">
+            <label for="exampleFormControlInput1">Ingrese su número de teléfono:</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Número de teléfono">
+          </div>
+        </div>
+          <div class="row justify-content-center">
+            <div class="col-6">
+          <label for="exampleFormControlSelect2">Seleccione el/los motivos de su consulta:</label>
+          <select multiple class="form-control" id="exampleFormControlSelect2">
+            <option>Medios de pago</option>
+            <option>Metodos de envio</option>
+            <option>Garantia</option>
+            <option>Compra minorista</option>
+            <option>Compra mayorista</option>
+            <option>Consulta de stock</option>
+          </select>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-6">
+          <label for="exampleFormControlTextarea1">Deje su mensaje:</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+    </div>
+        <form>
+            <div class="row justify-content-center">
+                <div class="col-6">
+              <label for="exampleFormControlFile1">Adjunte su archivo en caso de necesitarlo:</label><br>
+              <input type="file" class="form-control-file" id="exampleFormControlFile1">
             </div>
-    </form> 
+        </div>
+          </form>
+          <div class="col text-center" id="botonEnviar">
+          <button type="submit" class="btn btn-secondary">Enviar mensaje</button>
+        </div>
+      </form>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <footer class="footer">
         <h2>Seguinos en nuestras Redes</h2>

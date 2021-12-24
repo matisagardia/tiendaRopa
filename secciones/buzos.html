@@ -14,117 +14,128 @@
     <link rel="stylesheet" href="../scss/style.css">
     <title>NOCHANCE - Buzos</title>
 </head>
-<body>
+<body class="bodyProyecto">
     <header class="headerIniciosesion">
         <a href="../index.html">NOCHANCE</a>
     </header>
     <nav class="menuSuperior">
         <!--Menu de la derecha-->
+
                 <ul class="menuDerecha">
                     <li><a href="./registrarse.html">Registrarse</a></li>
                     <li><a href="./iniciarsesion.html">Iniciar Sesion</a></li>
                     <li><a href="./ayuda.html"> Ayuda</a></li>
                 </ul>
         <!--Menu central con tipo de producto-->
-                <ul class="menuCentral">
-                    <li><a href="./remeras.html">Remeras</a>
-                        <ul>
-                            <li><a href="">Clasicas</a></li>
-                            <li><a href="">Over-Size</a></li>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent ">
+            <div class="container-fluid">
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href=# id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Remeras
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <li><a class="dropdown-item" href="./remeras.html">Clásicas</a></li>
+                          <li><a class="dropdown-item" href="./remeras.html">Over-Size</a></li>
                         </ul>
-                    </li>    
-                    <li><a href="./buzos.html">Buzos</a></li>
-                    <li><a href="./camperas.html">Camperas</a></li>
-                    <li><a href="./pantalones.html">Pantalones</a>
-                        <ul>
-                            <li><a href="">Joggings</a></li>
-                            <li><a href="">Jeans</a></li>
-                            <li><a href="">Shorts</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="./accesorios.html">Accesorios</a>
-                        <ul>
-                            <li><a href="">Aros</a></li>
-                            <li><a href="">Cadenas</a></li>
-                            <li><a href="">Pulseras</a></li>
-                        </ul>
-                    </li>
+                      </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./buzos.html">Buzos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./camperas.html">Camperas</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href=# id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Pantalones
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="./pantalones.html">Jeans</a></li>
+                      <li><a class="dropdown-item" href="./pantalones.html">Joggings</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./accesorios.html">Accesorios</a>
+                  </li>
                 </ul>
-    </nav>    
-
+              </div>
+            </div>
+          </nav>
+    </nav>   
     <!--ESTE ES EL CATALOGO-->
-
-    <div class="container">
-    <div class="row">
-        <div class="col">
-            <img src="../recursos/buzo1.jpg" alt="buzo1">
-            <p>Modelo 1</p>
-            <p>Precio $$$</p>
-            <p>Ver mas</p>
+    <div class="container" id="containerCatalogo">
+      <div class="row" id="primeraRow">
+          <div class="col">
+              <img class="img-responsive"src="../recursos/buzo1.jpg" alt="remera1">
+              <p class="modelo">Modelo 1</p>
+              <p class="precio">Precio $$$</p>
+              <div class="verMas"><p>Ver mas</p></div>
+          </div>
+          <div class="col">
+              <img src="../recursos/buzo2.jpg" alt="remera2">
+              <p class="modelo">Modelo 2</p>
+              <p class="precio">Precio $$$</p>
+              <div class="verMas"><p>Ver mas</p></div></div>
+          <div class="col">
+              <img src="../recursos/buzo3.jpg" alt="remera3">
+              <p class="modelo">Modelo 3</p>
+              <p class="precio">Precio $$$</p>
+              <div class="verMas"><p>Ver mas</p></div></div>
+          <div class="col">
+              <img src="../recursos/buzo4.jpg" alt="remera4">
+              <p class="modelo">Modelo 4</p>
+              <p class="precio">Precio $$$</p>
+              <div class="verMas"><p>Ver mas</p></div></div>
         </div>
-        <div class="col">
-            <img src="../recursos/buzo2.jpg" alt="buzo2">
-            <p>Modelo 2</p>
-            <p>Precio $$$</p>
-            <p>Ver mas</p></div>
-        <div class="col">
-            <img src="../recursos/buzo3.jpg" alt="buzo3">
-            <p>Modelo 3</p>
-            <p>Precio $$$</p>
-            <p>Ver mas</p></div>
-        <div class="col">
-            <img src="../recursos/buzo4.jpg" alt="buzo4">
-            <p>Modelo 4</p>
-            <p>Precio $$$</p>
-            <p>Ver mas</p></div>
-      </div>
-     <div class="row">
-        <div class="col">
-            <img src="../recursos/buzo5.jpg" alt="buzo5">
-            <p>Modelo 5</p>
-            <p>Precio $$$</p>
-            <p>Ver mas</p>
+       <div class="row" id="segundaRow">
+          <div class="col">
+              <img src="../recursos/buzo5.jpg" alt="remera5">
+              <p class="modelo">Modelo 5</p>
+              <p class="precio">>Precio $$$</p>
+              <div class="verMas"><p>Ver mas</p></div>
+          </div>
+          <div class="col">
+              <img src="../recursos/buzo6.jpg" alt="remera6">
+              <p class="modelo">Modelo 6</p>
+              <p class="precio">Precio $$$</p>
+              <div class="verMas"><p>Ver mas</p></div></div>
+          <div class="col">
+              <img src="../recursos/buzo7.jpg" alt="remera7">
+              <p class="modelo">Modelo 7</p>
+              <p class="precio">Precio $$$</p>
+              <div class="verMas"><p>Ver mas</p></div></div>
+          <div class="col">
+              <img src="../recursos/buzo8.jpg" alt="remera8">
+              <p class="modelo">Modelo 8</p>
+              <p class="precio">Precio $$$</p>
+              <div class="verMas"><p>Ver mas</p></div></div>
         </div>
-        <div class="col">
-            <img src="../recursos/buzo6.jpg" alt="buzo6">
-            <p>Modelo 6</p>
-            <p>Precio $$$</p>
-            <p>Ver mas</p></div>
-        <div class="col">
-            <img src="../recursos/buzo7.jpg" alt="buzo7">
-            <p>Modelo 7</p>
-            <p>Precio $$$</p>
-            <p>Ver mas</p></div>
-        <div class="col">
-            <img src="../recursos/buzo8.jpg" alt="buzo8">
-            <p>Modelo 8</p>
-            <p>Precio $$$</p>
-            <p>Ver mas</p></div>
-      </div>
-      <div class="row">
-        <div class="col">
-            <img src="../recursos/buzo9.jpg" alt="buzo9">
-            <p>Modelo 9</p>
-            <p>Precio $$$</p>
-            <p>Ver mas</p>
+        <div class="row" id="terceraRow">
+          <div class="col">
+              <img src="../recursos/buzo9.jpg" alt="remera9">
+              <p class="modelo">Modelo 9</p>
+              <p class="precio">Precio $$$</p>
+              <div class="verMas"><p>Ver mas</p></div>
+          </div>
+          <div class="col">
+              <img src="../recursos/buzo10.jpg" alt="remera10">
+              <p class="modelo">Modelo 10</p>
+              <p class="precio">Precio $$$</p>
+              <div class="verMas"><p>Ver mas</p></div></div>
+          <div class="col">
+              <img src="../recursos/buzo11.jpg" alt="remera11">
+              <p class="modelo">Modelo 11</p>
+              <p class="precio">Precio $$$</p>
+              <div class="verMas"><p>Ver mas</p></div></div>
+          <div class="col">
+              <img src="../recursos/buzo12.jpg" alt="remera12">
+              <p class="modelo">Modelo 12</p>
+              <p class="precio">Precio $$$</p>
+              <div class="verMas"><p>Ver mas</p></div></div>
         </div>
-        <div class="col">
-            <img src="../recursos/buzo10.jpg" alt="buzo10">
-            <p>Modelo 10</p>
-            <p>Precio $$$</p>
-            <p>Ver mas</p></div>
-        <div class="col">
-            <img src="../recursos/buzo11.jpg" alt="buzo11">
-            <p>Modelo 11</p>
-            <p>Precio $$$</p>
-            <p>Ver mas</p></div>
-        <div class="col">
-            <img src="../recursos/buzo12.jpg" alt="buzo12">
-            <p>Modelo 12</p>
-            <p>Precio $$$</p>
-            <p>Ver mas</p></div>
       </div>
-    </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <footer class="footer">

@@ -14,42 +14,56 @@
     <link rel="stylesheet" href="../scss/style.css">
     <title>NOCHANCE - Iniciar Sesion</title>
 </head>
-<body>
+<body class="bodyProyecto">
     <header class="headerIniciosesion">
         <a href="../index.html">NOCHANCE</a>
     </header>
     <nav class="menuSuperior">
         <!--Menu de la derecha-->
+
                 <ul class="menuDerecha">
                     <li><a href="./registrarse.html">Registrarse</a></li>
                     <li><a href="./iniciarsesion.html">Iniciar Sesion</a></li>
                     <li><a href="./ayuda.html"> Ayuda</a></li>
                 </ul>
+
         <!--Menu central con tipo de producto-->
-                <ul class="menuCentral">
-                    <li><a href="./remeras.html">Remeras</a>
-                        <ul>
-                            <li><a href="">Clasicas</a></li>
-                            <li><a href="">Over-Size</a></li>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent ">
+            <div class="container-fluid">
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href=# id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Remeras
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <li><a class="dropdown-item" href="./remeras.html">Clásicas</a></li>
+                          <li><a class="dropdown-item" href="./remeras.html">Over-Size</a></li>
                         </ul>
-                    </li>    
-                    <li><a href="./buzos.html">Buzos</a></li>
-                    <li><a href="./camperas.html">Camperas</a></li>
-                    <li><a href="./pantalones.html">Pantalones</a>
-                        <ul>
-                            <li><a href="">Joggings</a></li>
-                            <li><a href="">Jeans</a></li>
-                            <li><a href="">Shorts</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="./accesorios.html">Accesorios</a>
-                        <ul>
-                            <li><a href="">Aros</a></li>
-                            <li><a href="">Cadenas</a></li>
-                            <li><a href="">Pulseras</a></li>
-                        </ul>
-                    </li>
+                      </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./buzos.html">Buzos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./camperas.html">Camperas</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href=# id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Pantalones
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="./pantalones.html">Jeans</a></li>
+                      <li><a class="dropdown-item" href="./pantalones.html">Joggings</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./accesorios.html">Accesorios</a>
+                  </li>
                 </ul>
+              </div>
+            </div>
+          </nav>
     </nav>   
     <form class="row g-3" id="formIniciosesion">
         <div class="col-md-3">
