@@ -12,8 +12,6 @@
 
 .header p {
   font-size: 100px;
-  -webkit-transition: background-color 2s;
-  transition: background-color 2s;
 }
 
 .header p:hover {
@@ -35,21 +33,6 @@ nav ul a {
 }
 
 /*ESTILO MENU DE LA DERECHA*/
-.menuDerecha li a {
-  -webkit-text-decoration: underline 0.1em rgba(255, 255, 255, 0);
-          text-decoration: underline 0.1em rgba(255, 255, 255, 0);
-  -webkit-transition: -webkit-text-decoration-color 800ms;
-  transition: -webkit-text-decoration-color 800ms;
-  transition: text-decoration-color 800ms;
-  transition: text-decoration-color 800ms, -webkit-text-decoration-color 800ms;
-}
-
-.menuDerecha li a:hover {
-  -webkit-text-decoration-color: black;
-          text-decoration-color: black;
-  color: black;
-}
-
 .menuDerecha {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -66,6 +49,21 @@ nav ul a {
 .menuDerecha li {
   list-style-type: none;
   padding: 10px;
+}
+
+.menuDerecha li a {
+  -webkit-text-decoration: underline 0.1em rgba(255, 255, 255, 0);
+          text-decoration: underline 0.1em rgba(255, 255, 255, 0);
+  -webkit-transition: -webkit-text-decoration-color 800ms;
+  transition: -webkit-text-decoration-color 800ms;
+  transition: text-decoration-color 800ms;
+  transition: text-decoration-color 800ms, -webkit-text-decoration-color 800ms;
+}
+
+.menuDerecha li a:hover {
+  -webkit-text-decoration-color: black;
+          text-decoration-color: black;
+  color: black;
 }
 
 /*BARRA DE NAVEGACION CENTRAL*/
@@ -121,6 +119,12 @@ footer h2 {
   background-color: #52616b;
   text-align: center;
   color: #f0f5f9;
+  margin-top: 10px;
+}
+
+footer p {
+  text-align: center;
+  font-size: large;
 }
 
 .footer__iconos {
@@ -135,7 +139,7 @@ footer h2 {
 
 .footer__iconos img {
   margin-inline: 20px;
-  width: 50px;
+  width: 30px;
 }
 
 footer img:hover {
@@ -148,13 +152,23 @@ footer img:hover {
   text-align: center;
 }
 
+#containercatalogo {
+  margin-top: -100px;
+}
+
 #containerCatalogo p {
   font-size: large;
+}
+
+#containerCatalogo img {
+  width: 70%;
+  height: 70%;
 }
 
 .modelo {
   margin-bottom: -5px;
   font-weight: bold;
+  margin-top: 10px;
 }
 
 .precio {
@@ -167,6 +181,12 @@ footer img:hover {
   text-align: center;
   margin-left: 40%;
   margin-right: 40%;
+  margin-bottom: 120px;
+}
+
+.mainAccesorios h3 {
+  text-align: center;
+  font-size: xx-large;
 }
 
 /*ESTILO SECCION AYUDA*/
@@ -218,11 +238,8 @@ footer img:hover {
     font-size: 80px;
   }
   #comoComprar img {
-    width: 75px;
-    height: 75px;
-  }
-  #comoComprar img p {
-    font-size: small;
+    width: 90px;
+    height: 90px;
   }
 }
 
@@ -232,6 +249,13 @@ footer img:hover {
         -ms-flex-pack: center;
             justify-content: center;
     padding: 0rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #barraNavegacion {
+    border: 0px;
+    border-style: solid;
   }
 }
 /*# sourceMappingURL=style.css.map */
